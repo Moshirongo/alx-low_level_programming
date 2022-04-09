@@ -3,17 +3,16 @@
 /**
  * main - prints alphabets on lower case
  *
- * returns: 0 (Success)
+ * Return: 0 (Success)
  */
 /* main function*/
-int main(void)/* betty style doc for function main goes there */
+int main(void)
 {
 	char ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(ch);
-		putchar('\n');
+		putchar(ch'\n');
 	}
 	return (0);
 }
