@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - check code
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- * Return:0 Always 
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(int x)
+
+int _putchar(char c)
+
 {
-	int p;
-	p = x;
 
-	putchar(p);
+		return (write(1, &c, 1));
 
-	return (0);
 }
