@@ -7,18 +7,16 @@
 
 
 /**
+ * positive_or_negative - Prints value of a number
+ * either positive negative or zero
+ * Return: Always 0 (success)
  *
- *  * main- Prints value of a number either positive negative or zero
- *
- *   *
- *
- *    * Return: Always 0 (success)
- *
- *     */
+ */
 
 int positive_or_negative(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
