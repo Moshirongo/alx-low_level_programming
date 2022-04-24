@@ -1,22 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Prints a serie of numbers with commas
- * Return: Always (Success);
+ * main - Entry point
+ * Return: Always 0 (Success/completed)
  */
 int main(void)
 {
-		int c;
+	int number_left;
+	int number_right;
 
-		for (c = '0'; c <= '9'; c++)
+	for (number_left = 48; number_right <= 78; number_left++)
+	{
+		for (number_right = number_left + 1 ; number_right <= 78; number_right++)
 		{
-			putchar(c);
-			if (c != '9')
+			putchar(number_left);
+			putchar (number_right);
+
+			if ((number_left == 56) && (number_right == 78))
 			{
-				putchar(',');
-				putchar(' ');
+				break;
 			}
+			putchar(',');
+			putchar (' ');
 		}
-		putchar('\n');
+	}
+	putchar('\n');
+
 	return (0);
 }
