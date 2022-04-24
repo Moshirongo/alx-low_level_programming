@@ -1,24 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - program to print numbers with different combinations
- *
- * Return: Always 0 (Success)
+ * main - Prints a serie of numbers with commas
+ * Return: Always (Success);
  */
 int main(void)
 {
-	int n;
+		int c;
 
-	for (n = '0'; n <= '9'; n++)
-	{
-		putchar(n);
-		if (n < '9')
+		for (c = '0'; c <= '9'; c++)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(c);
+			if (c != '9')
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-	}
-	putchar('\n');
-
+		putchar('\n');
 	return (0);
 }
+
+
